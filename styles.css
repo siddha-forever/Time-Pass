@@ -1,0 +1,139 @@
+/* General body styling */
+body {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  background-color: #f9e3e3; /* Soft pink background */
+  font-family: 'Arial', sans-serif;
+  flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  max-width: 80%; /* Limits the width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  color: #d32f2f; /* Reddish color */
+  animation: fadeInAndMoveUp 2s ease-in-out; /* Fade-in and move-up animation */
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #555; /* Dark gray color */
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out; /* Simple fade-in animation */
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-button, .no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+.yes-button {
+  background-color: #4caf50; /* Green button */
+  color: white;
+}
+
+.no-button {
+  background-color: #f44336; /* Red button */
+  color: white;
+}
+
+/* Button hover effects */
+.yes-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.no-button:hover {
+  background-color: #c62828; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* GIF container */
+.gif_container {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  margin: 20px 0; /* Adds spacing above and below the image */
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+}
+
+.gif_container img {
+  max-width: 300px; /* Sets a fixed maximum width for the image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Adds rounded corners */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation for the image */
+}
+
+/* Paragraph text */
+p {
+  font-size: 1.2em;
+  color: #555; /* Dark gray color */
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out; /* Simple fade-in animation */
+}
+
+/* Keyframes for animations */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start fully transparent */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+  }
+}
+
+/* Fade-in and move-up animation */
+@keyframes fadeInAndMoveUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Start 20px lower */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at the original position */
+  }
+}
+
+/* Retry button styling */
+.retry-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-top: 20px; /* Adds spacing above the button */
+  background-color: #ff9800; /* Orange color for retry */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+.retry-button:hover {
+  background-color: #e65100; /* Darker orange on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.retry-button:active {
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+  transition: transform 0.1s ease; /* Smooth transition */
+}
